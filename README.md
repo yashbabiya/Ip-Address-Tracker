@@ -2,6 +2,8 @@
 
 ![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
 
+View site: https://ip-address-tracker-tau-jade.vercel.app/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
