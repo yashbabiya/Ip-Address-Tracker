@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="top">
+      <div class="ab">
+        <h1>IP Address Tracker</h1>
+      
+        
+        <div class="input">
+          <input class= "zz" placeholder="Search for any IP address or domain" type="text">
+          <button class="submit" onclick="getIpDestails()"><img src="./images/icon-arrow.svg" alt="" sizes="" srcset=""></button>
+        </div>
+        <div class="info">
+          <div class="mob">
+            <div><p>IP_Address</p><span class="ip"></span></div>
+            <div><p>Location</p><span class="loc"></span></div>
+            <div>
+              <p>Timezone</p>
+                <span> <span class="tz"></span></span><!-- add offset value dynamically using the API -->
+            </div>
+            <div><p>ISP</p><span class="isp"></span></div> 
+          </div>
+
+
+          <table>
+            <tr>
+              <th>IP Address</th>
+              <th>Location</th>
+              <th>Timezone</th>
+              <th>ISP</th>
+            </tr>
+            <tr>
+              <td><span class="ip"></span></td>
+              <td><span class="loc"></span></td>
+              <td><span> <span class="tz"></span></span></td>
+              <td><span class="isp"></span></td>
+            </tr>
+          </table>
+        </div>
+
+       
+
+      </div>
+    </div>
+  
+     <div id="mapid"></div>
+  </div>
+    
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="main.js"></script>
+ 
+</body>
+</html>
